@@ -1,7 +1,12 @@
-import numpy as np 
-import os 
+import os
+from pathlib import Path
+
+import matplotlib
+import numpy as np
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from config_model import VALIDATION_CONFIG 
+from config.config_model import VALIDATION_CONFIG
 
 
 class DatasetValidator:
@@ -93,7 +98,7 @@ class DatasetValidator:
         print("NaN and Inf validation passed.")
 
 
-    def plot_distributions(self):
+    def plot_distributions(self, output_path=None):
 
         voltage = self.X_train[:, :, 0].flatten()
         current = self.X_train[:, :, 1].flatten()
@@ -116,10 +121,16 @@ class DatasetValidator:
         axs[1, 1].set_title("SOC Distribution")
 
         plt.tight_layout()
-        plt.show()
+        if output_path is None:
+            plt.show()
+        else:
+            output_path = Path(output_path)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            fig.savefig(output_path, dpi=150, bbox_inches="tight")
+        plt.close(fig)
 
 
-    def run_full_validation(self):
+    def run_full_validation(self, output_path=None):
 
         print("Starting dataset validation...")
 
@@ -132,4 +143,4 @@ class DatasetValidator:
         print("Dataset validation successful.")
 
         print("Generating distribution plots...")
-        self.plot_distributions()
+        self.plot_distributions(output_path)

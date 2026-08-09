@@ -2,14 +2,14 @@ import torch
 import numpy as np
 
 from models.lstm_soc_model import LSTMSOCEstimator
-from evaluation.metrics import mae, rmse, max_error
+from evaluation.metrics import calculate_metrics
 
 
-def evaluate(model_path, test_loader, device):
+def predict(model_path, test_loader, device):
 
     model = LSTMSOCEstimator().to(device)
 
-    model.load_state_dict(torch.load(model_path))
+    model.load_state_dict(torch.load(model_path, map_location=device))
 
     model.eval()
 
@@ -25,16 +25,16 @@ def evaluate(model_path, test_loader, device):
             pred = model(X)
 
             preds.append(pred.cpu().numpy())
-            targets.append(y.numpy())
+            targets.append(y.cpu().numpy())
 
     preds = np.vstack(preds)
     targets = np.vstack(targets)
 
-    results = {
+    return targets, preds
 
-        "MAE": mae(targets, preds),
-        "RMSE": rmse(targets, preds),
-        "MaxError": max_error(targets, preds)
-    }
 
-    return results
+def evaluate(model_path, test_loader, device):
+
+    targets, preds = predict(model_path, test_loader, device)
+
+    return calculate_metrics(targets, preds)
