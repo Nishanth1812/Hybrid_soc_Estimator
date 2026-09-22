@@ -4,3 +4,27 @@ __pycache__/
 *.py[cod]
 *$py.class
 *test.py
+
+# Local environments and caches
+.python-task/
+.uv-cache/
+.uv-cache-task/
+
+# Downloaded/generated datasets and run outputs
+datasets/
+evaluation_outputs/
+graphs/
+logs/
+outputs/results/
+outputs/mendeley/best_model.pt
+outputs/mendeley/training_history.json
+outputs/mendeley/training.log
+outputs/mendeley/graphs/
+models/best_model.pt
+
+# Temporary inspection files and generated bundles
+.pptx-edit-tmp/
+.tmp_ppt_review/
+*.inspect.ndjson
+Hybrid_soc_Estimator_dataset.zip
+Hybrid_soc_Estimator_kaggle_bundle.zip
