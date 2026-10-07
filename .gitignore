@@ -10,21 +10,12 @@ __pycache__/
 .uv-cache/
 .uv-cache-task/
 
-# Downloaded/generated datasets and run outputs
-datasets/
-evaluation_outputs/
-graphs/
-logs/
-outputs/results/
-outputs/mendeley/best_model.pt
-outputs/mendeley/training_history.json
-outputs/mendeley/training.log
-outputs/mendeley/graphs/
-models/best_model.pt
+# Local datasets and archived legacy files
+data/
+archive/legacy/
 
 # Temporary inspection files and generated bundles
 .pptx-edit-tmp/
 .tmp_ppt_review/
 *.inspect.ndjson
 Hybrid_soc_Estimator_dataset.zip
-Hybrid_soc_Estimator_kaggle_bundle.zip

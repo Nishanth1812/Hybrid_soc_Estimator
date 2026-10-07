@@ -5,8 +5,7 @@ import unittest
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 
-from training.trainer import Trainer
-from utils.logging_utils import configure_logging
+from soc_estimator.training import Trainer, configure_logging
 
 
 class LoggingTests(unittest.TestCase):

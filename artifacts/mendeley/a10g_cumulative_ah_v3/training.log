@@ -1,0 +1,960 @@
+2026-10-02 07:12:56 | INFO | Training started
+2026-10-02 07:12:56 | INFO | Dataset path: /data/processed_chronological_v3
+2026-10-02 07:12:56 | INFO | Configuration | epochs=120 | batch_size=1024 | learning_rate=0.001 | num_workers=2
+2026-10-02 07:12:56 | INFO | Hardware | device=cuda | cuda_available=True | cuda_device_count=1
+2026-10-02 07:12:59 | INFO | Train dataset | samples=36617 | batches=36 | batch_size=1024
+2026-10-02 07:12:59 | INFO | Validation dataset | samples=96974 | batches=95 | batch_size=1024
+2026-10-02 07:12:59 | INFO | Test dataset | samples=94956 | batches=93 | batch_size=1024
+2026-10-02 07:12:59 | INFO | Using device: cuda
+2026-10-02 07:13:01 | INFO | Epoch 1/120 started
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 1/36 | loss=0.062135 | elapsed=0.8s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 3/36 | loss=0.058384 | elapsed=0.8s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 6/36 | loss=0.057354 | elapsed=0.8s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 9/36 | loss=0.054054 | elapsed=0.9s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 12/36 | loss=0.052662 | elapsed=0.9s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 15/36 | loss=0.048395 | elapsed=0.9s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 18/36 | loss=0.044876 | elapsed=0.9s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 21/36 | loss=0.040885 | elapsed=1.0s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 24/36 | loss=0.038194 | elapsed=1.0s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 27/36 | loss=0.033179 | elapsed=1.0s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 30/36 | loss=0.030909 | elapsed=1.0s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 33/36 | loss=0.025334 | elapsed=1.0s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 | batch 36/36 | loss=0.023201 | elapsed=1.1s
+2026-10-02 07:13:02 | INFO | Epoch 1/120 complete | train_loss=0.043692 | val_loss=0.020670 | learning_rate=0.001 | elapsed=1.6s
+2026-10-02 07:13:02 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.020670
+2026-10-02 07:13:02 | INFO | Epoch 2/120 started
+2026-10-02 07:13:02 | INFO | Epoch 2/120 | batch 1/36 | loss=0.019738 | elapsed=0.1s
+2026-10-02 07:13:02 | INFO | Epoch 2/120 | batch 3/36 | loss=0.017505 | elapsed=0.1s
+2026-10-02 07:13:02 | INFO | Epoch 2/120 | batch 6/36 | loss=0.012774 | elapsed=0.1s
+2026-10-02 07:13:02 | INFO | Epoch 2/120 | batch 9/36 | loss=0.011341 | elapsed=0.1s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 12/36 | loss=0.010171 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 15/36 | loss=0.009547 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 18/36 | loss=0.007075 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 21/36 | loss=0.006835 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 24/36 | loss=0.006553 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 27/36 | loss=0.005758 | elapsed=0.3s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 30/36 | loss=0.004926 | elapsed=0.3s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 33/36 | loss=0.004825 | elapsed=0.3s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 | batch 36/36 | loss=0.004237 | elapsed=0.3s
+2026-10-02 07:13:03 | INFO | Epoch 2/120 complete | train_loss=0.008894 | val_loss=0.004231 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:03 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.004231
+2026-10-02 07:13:03 | INFO | Epoch 3/120 started
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 1/36 | loss=0.003765 | elapsed=0.0s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 3/36 | loss=0.003663 | elapsed=0.0s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 6/36 | loss=0.004379 | elapsed=0.1s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 9/36 | loss=0.003590 | elapsed=0.1s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 12/36 | loss=0.003838 | elapsed=0.1s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 15/36 | loss=0.003289 | elapsed=0.1s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 18/36 | loss=0.003196 | elapsed=0.1s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 21/36 | loss=0.003306 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 24/36 | loss=0.003358 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 27/36 | loss=0.002955 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 30/36 | loss=0.002758 | elapsed=0.2s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 33/36 | loss=0.003103 | elapsed=0.3s
+2026-10-02 07:13:03 | INFO | Epoch 3/120 | batch 36/36 | loss=0.002660 | elapsed=0.3s
+2026-10-02 07:13:04 | INFO | Epoch 3/120 complete | train_loss=0.003391 | val_loss=0.003067 | learning_rate=0.001 | elapsed=0.9s
+2026-10-02 07:13:04 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.003067
+2026-10-02 07:13:04 | INFO | Epoch 4/120 started
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 1/36 | loss=0.002870 | elapsed=0.0s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 3/36 | loss=0.002952 | elapsed=0.0s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 6/36 | loss=0.002972 | elapsed=0.1s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 9/36 | loss=0.002475 | elapsed=0.1s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 12/36 | loss=0.002704 | elapsed=0.1s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 15/36 | loss=0.002711 | elapsed=0.1s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 18/36 | loss=0.002050 | elapsed=0.2s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 21/36 | loss=0.002394 | elapsed=0.2s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 24/36 | loss=0.002047 | elapsed=0.2s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 27/36 | loss=0.002427 | elapsed=0.2s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 30/36 | loss=0.001987 | elapsed=0.4s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 33/36 | loss=0.001858 | elapsed=0.4s
+2026-10-02 07:13:04 | INFO | Epoch 4/120 | batch 36/36 | loss=0.001759 | elapsed=0.4s
+2026-10-02 07:13:05 | INFO | Epoch 4/120 complete | train_loss=0.002250 | val_loss=0.001093 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:05 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.001093
+2026-10-02 07:13:05 | INFO | Epoch 5/120 started
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 1/36 | loss=0.001535 | elapsed=0.0s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 3/36 | loss=0.001702 | elapsed=0.0s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 6/36 | loss=0.001372 | elapsed=0.1s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 9/36 | loss=0.001490 | elapsed=0.1s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 12/36 | loss=0.001539 | elapsed=0.1s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 15/36 | loss=0.001523 | elapsed=0.1s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 18/36 | loss=0.001491 | elapsed=0.1s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 21/36 | loss=0.001225 | elapsed=0.2s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 24/36 | loss=0.001248 | elapsed=0.2s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 27/36 | loss=0.001489 | elapsed=0.2s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 30/36 | loss=0.001485 | elapsed=0.2s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 33/36 | loss=0.001094 | elapsed=0.3s
+2026-10-02 07:13:05 | INFO | Epoch 5/120 | batch 36/36 | loss=0.001537 | elapsed=0.3s
+2026-10-02 07:13:06 | INFO | Epoch 5/120 complete | train_loss=0.001463 | val_loss=0.000541 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:06 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000541
+2026-10-02 07:13:06 | INFO | Epoch 6/120 started
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 1/36 | loss=0.001185 | elapsed=0.0s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 3/36 | loss=0.001135 | elapsed=0.0s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 6/36 | loss=0.001337 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 9/36 | loss=0.001122 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 12/36 | loss=0.001361 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 15/36 | loss=0.001201 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 18/36 | loss=0.001224 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 21/36 | loss=0.001128 | elapsed=0.2s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 24/36 | loss=0.001263 | elapsed=0.2s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 27/36 | loss=0.001297 | elapsed=0.2s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 30/36 | loss=0.001180 | elapsed=0.2s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 33/36 | loss=0.001046 | elapsed=0.3s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 | batch 36/36 | loss=0.001035 | elapsed=0.3s
+2026-10-02 07:13:06 | INFO | Epoch 6/120 complete | train_loss=0.001207 | val_loss=0.000417 | learning_rate=0.001 | elapsed=0.6s
+2026-10-02 07:13:06 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000417
+2026-10-02 07:13:06 | INFO | Epoch 7/120 started
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 1/36 | loss=0.001059 | elapsed=0.0s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 3/36 | loss=0.001034 | elapsed=0.0s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 6/36 | loss=0.000890 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 9/36 | loss=0.001092 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 12/36 | loss=0.001089 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 15/36 | loss=0.001075 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 18/36 | loss=0.000909 | elapsed=0.1s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 21/36 | loss=0.001029 | elapsed=0.2s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 24/36 | loss=0.001033 | elapsed=0.2s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 27/36 | loss=0.000788 | elapsed=0.2s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 30/36 | loss=0.000853 | elapsed=0.2s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 33/36 | loss=0.000860 | elapsed=0.3s
+2026-10-02 07:13:06 | INFO | Epoch 7/120 | batch 36/36 | loss=0.000673 | elapsed=0.3s
+2026-10-02 07:13:07 | INFO | Epoch 7/120 complete | train_loss=0.000966 | val_loss=0.000272 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:07 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000272
+2026-10-02 07:13:07 | INFO | Epoch 8/120 started
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 1/36 | loss=0.000817 | elapsed=0.0s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 3/36 | loss=0.000872 | elapsed=0.0s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 6/36 | loss=0.000877 | elapsed=0.1s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 9/36 | loss=0.000739 | elapsed=0.1s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 12/36 | loss=0.000765 | elapsed=0.1s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 15/36 | loss=0.000686 | elapsed=0.1s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 18/36 | loss=0.000814 | elapsed=0.1s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 21/36 | loss=0.000710 | elapsed=0.2s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 24/36 | loss=0.000727 | elapsed=0.2s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 27/36 | loss=0.000700 | elapsed=0.2s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 30/36 | loss=0.000670 | elapsed=0.2s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 33/36 | loss=0.000725 | elapsed=0.3s
+2026-10-02 07:13:07 | INFO | Epoch 8/120 | batch 36/36 | loss=0.000855 | elapsed=0.3s
+2026-10-02 07:13:08 | INFO | Epoch 8/120 complete | train_loss=0.000755 | val_loss=0.000144 | learning_rate=0.001 | elapsed=0.6s
+2026-10-02 07:13:08 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000144
+2026-10-02 07:13:08 | INFO | Epoch 9/120 started
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 1/36 | loss=0.000657 | elapsed=0.0s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 3/36 | loss=0.000582 | elapsed=0.0s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 6/36 | loss=0.000698 | elapsed=0.1s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 9/36 | loss=0.000632 | elapsed=0.1s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 12/36 | loss=0.000546 | elapsed=0.1s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 15/36 | loss=0.000633 | elapsed=0.1s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 18/36 | loss=0.000561 | elapsed=0.2s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 21/36 | loss=0.000551 | elapsed=0.2s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 24/36 | loss=0.000581 | elapsed=0.2s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 27/36 | loss=0.000585 | elapsed=0.3s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 30/36 | loss=0.000489 | elapsed=0.3s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 33/36 | loss=0.000494 | elapsed=0.3s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 | batch 36/36 | loss=0.000504 | elapsed=0.4s
+2026-10-02 07:13:08 | INFO | Epoch 9/120 complete | train_loss=0.000593 | val_loss=0.000061 | learning_rate=0.001 | elapsed=0.9s
+2026-10-02 07:13:08 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000061
+2026-10-02 07:13:08 | INFO | Epoch 10/120 started
+2026-10-02 07:13:08 | INFO | Epoch 10/120 | batch 1/36 | loss=0.000551 | elapsed=0.0s
+2026-10-02 07:13:08 | INFO | Epoch 10/120 | batch 3/36 | loss=0.000489 | elapsed=0.0s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 6/36 | loss=0.000486 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 9/36 | loss=0.000523 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 12/36 | loss=0.000504 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 15/36 | loss=0.000530 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 18/36 | loss=0.000456 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 21/36 | loss=0.000470 | elapsed=0.2s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 24/36 | loss=0.000484 | elapsed=0.2s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 27/36 | loss=0.000484 | elapsed=0.2s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 30/36 | loss=0.000517 | elapsed=0.2s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 33/36 | loss=0.000433 | elapsed=0.3s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 | batch 36/36 | loss=0.000539 | elapsed=0.3s
+2026-10-02 07:13:09 | INFO | Epoch 10/120 complete | train_loss=0.000502 | val_loss=0.000073 | learning_rate=0.001 | elapsed=0.6s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 started
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 1/36 | loss=0.000498 | elapsed=0.0s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 3/36 | loss=0.000500 | elapsed=0.0s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 6/36 | loss=0.000466 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 9/36 | loss=0.000487 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 12/36 | loss=0.000474 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 15/36 | loss=0.000432 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 18/36 | loss=0.000471 | elapsed=0.1s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 21/36 | loss=0.000422 | elapsed=0.2s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 24/36 | loss=0.000526 | elapsed=0.2s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 27/36 | loss=0.000502 | elapsed=0.2s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 30/36 | loss=0.000466 | elapsed=0.2s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 33/36 | loss=0.000434 | elapsed=0.3s
+2026-10-02 07:13:09 | INFO | Epoch 11/120 | batch 36/36 | loss=0.000469 | elapsed=0.3s
+2026-10-02 07:13:10 | INFO | Epoch 11/120 complete | train_loss=0.000466 | val_loss=0.000111 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 started
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 1/36 | loss=0.000439 | elapsed=0.0s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 3/36 | loss=0.000480 | elapsed=0.0s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 6/36 | loss=0.000452 | elapsed=0.1s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 9/36 | loss=0.000416 | elapsed=0.1s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 12/36 | loss=0.000408 | elapsed=0.1s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 15/36 | loss=0.000414 | elapsed=0.1s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 18/36 | loss=0.000376 | elapsed=0.2s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 21/36 | loss=0.000423 | elapsed=0.2s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 24/36 | loss=0.000389 | elapsed=0.2s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 27/36 | loss=0.000344 | elapsed=0.2s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 30/36 | loss=0.000379 | elapsed=0.2s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 33/36 | loss=0.000387 | elapsed=0.3s
+2026-10-02 07:13:10 | INFO | Epoch 12/120 | batch 36/36 | loss=0.000423 | elapsed=0.3s
+2026-10-02 07:13:11 | INFO | Epoch 12/120 complete | train_loss=0.000424 | val_loss=0.000065 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 started
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 1/36 | loss=0.000418 | elapsed=0.0s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 3/36 | loss=0.000339 | elapsed=0.0s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 6/36 | loss=0.000400 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 9/36 | loss=0.000442 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 12/36 | loss=0.000407 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 15/36 | loss=0.000373 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 18/36 | loss=0.000390 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 21/36 | loss=0.000401 | elapsed=0.2s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 24/36 | loss=0.000368 | elapsed=0.2s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 27/36 | loss=0.000390 | elapsed=0.2s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 30/36 | loss=0.000354 | elapsed=0.2s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 33/36 | loss=0.000407 | elapsed=0.3s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 | batch 36/36 | loss=0.000389 | elapsed=0.3s
+2026-10-02 07:13:11 | INFO | Epoch 13/120 complete | train_loss=0.000391 | val_loss=0.000065 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:11 | INFO | Epoch 14/120 started
+2026-10-02 07:13:11 | INFO | Epoch 14/120 | batch 1/36 | loss=0.000358 | elapsed=0.0s
+2026-10-02 07:13:11 | INFO | Epoch 14/120 | batch 3/36 | loss=0.000334 | elapsed=0.0s
+2026-10-02 07:13:11 | INFO | Epoch 14/120 | batch 6/36 | loss=0.000343 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 14/120 | batch 9/36 | loss=0.000369 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 14/120 | batch 12/36 | loss=0.000365 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 14/120 | batch 15/36 | loss=0.000366 | elapsed=0.1s
+2026-10-02 07:13:11 | INFO | Epoch 14/120 | batch 18/36 | loss=0.000438 | elapsed=0.2s
+2026-10-02 07:13:12 | INFO | Epoch 14/120 | batch 21/36 | loss=0.000363 | elapsed=0.3s
+2026-10-02 07:13:12 | INFO | Epoch 14/120 | batch 24/36 | loss=0.000339 | elapsed=0.3s
+2026-10-02 07:13:12 | INFO | Epoch 14/120 | batch 27/36 | loss=0.000362 | elapsed=0.3s
+2026-10-02 07:13:12 | INFO | Epoch 14/120 | batch 30/36 | loss=0.000375 | elapsed=0.3s
+2026-10-02 07:13:12 | INFO | Epoch 14/120 | batch 33/36 | loss=0.000345 | elapsed=0.4s
+2026-10-02 07:13:12 | INFO | Epoch 14/120 | batch 36/36 | loss=0.000327 | elapsed=0.4s
+2026-10-02 07:13:12 | INFO | Epoch 14/120 complete | train_loss=0.000362 | val_loss=0.000057 | learning_rate=0.001 | elapsed=0.9s
+2026-10-02 07:13:12 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000057
+2026-10-02 07:13:12 | INFO | Epoch 15/120 started
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 1/36 | loss=0.000381 | elapsed=0.0s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 3/36 | loss=0.000363 | elapsed=0.0s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 6/36 | loss=0.000347 | elapsed=0.1s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 9/36 | loss=0.000350 | elapsed=0.1s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 12/36 | loss=0.000371 | elapsed=0.1s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 15/36 | loss=0.000342 | elapsed=0.1s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 18/36 | loss=0.000339 | elapsed=0.2s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 21/36 | loss=0.000403 | elapsed=0.2s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 24/36 | loss=0.000338 | elapsed=0.2s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 27/36 | loss=0.000383 | elapsed=0.2s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 30/36 | loss=0.000357 | elapsed=0.2s
+2026-10-02 07:13:12 | INFO | Epoch 15/120 | batch 33/36 | loss=0.000361 | elapsed=0.3s
+2026-10-02 07:13:13 | INFO | Epoch 15/120 | batch 36/36 | loss=0.000342 | elapsed=0.3s
+2026-10-02 07:13:13 | INFO | Epoch 15/120 complete | train_loss=0.000363 | val_loss=0.000049 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:13 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000049
+2026-10-02 07:13:13 | INFO | Epoch 16/120 started
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 1/36 | loss=0.000345 | elapsed=0.0s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 3/36 | loss=0.000325 | elapsed=0.0s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 6/36 | loss=0.000333 | elapsed=0.1s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 9/36 | loss=0.000330 | elapsed=0.1s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 12/36 | loss=0.000340 | elapsed=0.1s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 15/36 | loss=0.000324 | elapsed=0.1s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 18/36 | loss=0.000375 | elapsed=0.2s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 21/36 | loss=0.000342 | elapsed=0.2s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 24/36 | loss=0.000389 | elapsed=0.2s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 27/36 | loss=0.000339 | elapsed=0.2s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 30/36 | loss=0.000354 | elapsed=0.2s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 33/36 | loss=0.000322 | elapsed=0.3s
+2026-10-02 07:13:13 | INFO | Epoch 16/120 | batch 36/36 | loss=0.000302 | elapsed=0.3s
+2026-10-02 07:13:14 | INFO | Epoch 16/120 complete | train_loss=0.000341 | val_loss=0.000052 | learning_rate=0.001 | elapsed=0.9s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 started
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 1/36 | loss=0.000339 | elapsed=0.0s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 3/36 | loss=0.000346 | elapsed=0.0s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 6/36 | loss=0.000345 | elapsed=0.1s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 9/36 | loss=0.000328 | elapsed=0.1s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 12/36 | loss=0.000330 | elapsed=0.1s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 15/36 | loss=0.000331 | elapsed=0.1s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 18/36 | loss=0.000313 | elapsed=0.2s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 21/36 | loss=0.000345 | elapsed=0.2s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 24/36 | loss=0.000346 | elapsed=0.2s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 27/36 | loss=0.000335 | elapsed=0.2s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 30/36 | loss=0.000302 | elapsed=0.2s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 33/36 | loss=0.000306 | elapsed=0.3s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 | batch 36/36 | loss=0.000317 | elapsed=0.3s
+2026-10-02 07:13:14 | INFO | Epoch 17/120 complete | train_loss=0.000332 | val_loss=0.000038 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:14 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000038
+2026-10-02 07:13:14 | INFO | Epoch 18/120 started
+2026-10-02 07:13:14 | INFO | Epoch 18/120 | batch 1/36 | loss=0.000328 | elapsed=0.0s
+2026-10-02 07:13:14 | INFO | Epoch 18/120 | batch 3/36 | loss=0.000335 | elapsed=0.0s
+2026-10-02 07:13:14 | INFO | Epoch 18/120 | batch 6/36 | loss=0.000328 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 9/36 | loss=0.000278 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 12/36 | loss=0.000298 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 15/36 | loss=0.000327 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 18/36 | loss=0.000322 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 21/36 | loss=0.000336 | elapsed=0.2s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 24/36 | loss=0.000301 | elapsed=0.2s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 27/36 | loss=0.000328 | elapsed=0.2s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 30/36 | loss=0.000273 | elapsed=0.2s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 33/36 | loss=0.000308 | elapsed=0.3s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 | batch 36/36 | loss=0.000330 | elapsed=0.3s
+2026-10-02 07:13:15 | INFO | Epoch 18/120 complete | train_loss=0.000317 | val_loss=0.000055 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:15 | INFO | Epoch 19/120 started
+2026-10-02 07:13:15 | INFO | Epoch 19/120 | batch 1/36 | loss=0.000305 | elapsed=0.0s
+2026-10-02 07:13:15 | INFO | Epoch 19/120 | batch 3/36 | loss=0.000334 | elapsed=0.0s
+2026-10-02 07:13:15 | INFO | Epoch 19/120 | batch 6/36 | loss=0.000388 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 19/120 | batch 9/36 | loss=0.000321 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 19/120 | batch 12/36 | loss=0.000343 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 19/120 | batch 15/36 | loss=0.000325 | elapsed=0.1s
+2026-10-02 07:13:15 | INFO | Epoch 19/120 | batch 18/36 | loss=0.000299 | elapsed=0.2s
+2026-10-02 07:13:16 | INFO | Epoch 19/120 | batch 21/36 | loss=0.000366 | elapsed=0.3s
+2026-10-02 07:13:16 | INFO | Epoch 19/120 | batch 24/36 | loss=0.000363 | elapsed=0.3s
+2026-10-02 07:13:16 | INFO | Epoch 19/120 | batch 27/36 | loss=0.000334 | elapsed=0.3s
+2026-10-02 07:13:16 | INFO | Epoch 19/120 | batch 30/36 | loss=0.000317 | elapsed=0.3s
+2026-10-02 07:13:16 | INFO | Epoch 19/120 | batch 33/36 | loss=0.000318 | elapsed=0.4s
+2026-10-02 07:13:16 | INFO | Epoch 19/120 | batch 36/36 | loss=0.000314 | elapsed=0.4s
+2026-10-02 07:13:16 | INFO | Epoch 19/120 complete | train_loss=0.000339 | val_loss=0.000057 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 started
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 1/36 | loss=0.000301 | elapsed=0.0s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 3/36 | loss=0.000291 | elapsed=0.0s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 6/36 | loss=0.000289 | elapsed=0.1s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 9/36 | loss=0.000299 | elapsed=0.1s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 12/36 | loss=0.000295 | elapsed=0.1s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 15/36 | loss=0.000296 | elapsed=0.1s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 18/36 | loss=0.000288 | elapsed=0.2s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 21/36 | loss=0.000327 | elapsed=0.2s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 24/36 | loss=0.000327 | elapsed=0.2s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 27/36 | loss=0.000334 | elapsed=0.2s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 30/36 | loss=0.000345 | elapsed=0.2s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 33/36 | loss=0.000324 | elapsed=0.3s
+2026-10-02 07:13:16 | INFO | Epoch 20/120 | batch 36/36 | loss=0.000356 | elapsed=0.3s
+2026-10-02 07:13:17 | INFO | Epoch 20/120 complete | train_loss=0.000314 | val_loss=0.000071 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 started
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 1/36 | loss=0.000278 | elapsed=0.0s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 3/36 | loss=0.000292 | elapsed=0.0s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 6/36 | loss=0.000361 | elapsed=0.1s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 9/36 | loss=0.000309 | elapsed=0.1s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 12/36 | loss=0.000346 | elapsed=0.1s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 15/36 | loss=0.000285 | elapsed=0.1s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 18/36 | loss=0.000355 | elapsed=0.2s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 21/36 | loss=0.000289 | elapsed=0.2s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 24/36 | loss=0.000340 | elapsed=0.2s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 27/36 | loss=0.000306 | elapsed=0.2s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 30/36 | loss=0.000276 | elapsed=0.2s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 33/36 | loss=0.000371 | elapsed=0.3s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 | batch 36/36 | loss=0.000306 | elapsed=0.3s
+2026-10-02 07:13:17 | INFO | Epoch 21/120 complete | train_loss=0.000323 | val_loss=0.000066 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:17 | INFO | Epoch 22/120 started
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 1/36 | loss=0.000292 | elapsed=0.0s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 3/36 | loss=0.000298 | elapsed=0.0s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 6/36 | loss=0.000308 | elapsed=0.1s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 9/36 | loss=0.000279 | elapsed=0.1s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 12/36 | loss=0.000276 | elapsed=0.1s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 15/36 | loss=0.000270 | elapsed=0.1s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 18/36 | loss=0.000281 | elapsed=0.2s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 21/36 | loss=0.000287 | elapsed=0.2s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 24/36 | loss=0.000290 | elapsed=0.2s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 27/36 | loss=0.000281 | elapsed=0.2s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 30/36 | loss=0.000268 | elapsed=0.2s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 33/36 | loss=0.000263 | elapsed=0.3s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 | batch 36/36 | loss=0.000275 | elapsed=0.3s
+2026-10-02 07:13:18 | INFO | Epoch 22/120 complete | train_loss=0.000288 | val_loss=0.000037 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:18 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000037
+2026-10-02 07:13:18 | INFO | Epoch 23/120 started
+2026-10-02 07:13:18 | INFO | Epoch 23/120 | batch 1/36 | loss=0.000284 | elapsed=0.0s
+2026-10-02 07:13:18 | INFO | Epoch 23/120 | batch 3/36 | loss=0.000320 | elapsed=0.0s
+2026-10-02 07:13:18 | INFO | Epoch 23/120 | batch 6/36 | loss=0.000311 | elapsed=0.1s
+2026-10-02 07:13:18 | INFO | Epoch 23/120 | batch 9/36 | loss=0.000299 | elapsed=0.1s
+2026-10-02 07:13:18 | INFO | Epoch 23/120 | batch 12/36 | loss=0.000266 | elapsed=0.1s
+2026-10-02 07:13:18 | INFO | Epoch 23/120 | batch 15/36 | loss=0.000273 | elapsed=0.1s
+2026-10-02 07:13:18 | INFO | Epoch 23/120 | batch 18/36 | loss=0.000269 | elapsed=0.2s
+2026-10-02 07:13:18 | INFO | Epoch 23/120 | batch 21/36 | loss=0.000271 | elapsed=0.2s
+2026-10-02 07:13:19 | INFO | Epoch 23/120 | batch 24/36 | loss=0.000311 | elapsed=0.2s
+2026-10-02 07:13:19 | INFO | Epoch 23/120 | batch 27/36 | loss=0.000284 | elapsed=0.2s
+2026-10-02 07:13:19 | INFO | Epoch 23/120 | batch 30/36 | loss=0.000278 | elapsed=0.2s
+2026-10-02 07:13:19 | INFO | Epoch 23/120 | batch 33/36 | loss=0.000278 | elapsed=0.3s
+2026-10-02 07:13:19 | INFO | Epoch 23/120 | batch 36/36 | loss=0.000242 | elapsed=0.3s
+2026-10-02 07:13:19 | INFO | Epoch 23/120 complete | train_loss=0.000284 | val_loss=0.000063 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 started
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 1/36 | loss=0.000293 | elapsed=0.0s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 3/36 | loss=0.000300 | elapsed=0.0s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 6/36 | loss=0.000282 | elapsed=0.1s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 9/36 | loss=0.000277 | elapsed=0.1s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 12/36 | loss=0.000243 | elapsed=0.1s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 15/36 | loss=0.000309 | elapsed=0.2s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 18/36 | loss=0.000283 | elapsed=0.2s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 21/36 | loss=0.000290 | elapsed=0.3s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 24/36 | loss=0.000290 | elapsed=0.3s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 27/36 | loss=0.000299 | elapsed=0.3s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 30/36 | loss=0.000245 | elapsed=0.3s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 33/36 | loss=0.000291 | elapsed=0.3s
+2026-10-02 07:13:19 | INFO | Epoch 24/120 | batch 36/36 | loss=0.000278 | elapsed=0.4s
+2026-10-02 07:13:20 | INFO | Epoch 24/120 complete | train_loss=0.000281 | val_loss=0.000038 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 started
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 1/36 | loss=0.000253 | elapsed=0.0s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 3/36 | loss=0.000246 | elapsed=0.0s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 6/36 | loss=0.000258 | elapsed=0.1s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 9/36 | loss=0.000275 | elapsed=0.1s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 12/36 | loss=0.000260 | elapsed=0.1s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 15/36 | loss=0.000231 | elapsed=0.1s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 18/36 | loss=0.000267 | elapsed=0.2s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 21/36 | loss=0.000263 | elapsed=0.2s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 24/36 | loss=0.000286 | elapsed=0.2s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 27/36 | loss=0.000258 | elapsed=0.2s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 30/36 | loss=0.000282 | elapsed=0.2s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 33/36 | loss=0.000286 | elapsed=0.3s
+2026-10-02 07:13:20 | INFO | Epoch 25/120 | batch 36/36 | loss=0.000251 | elapsed=0.3s
+2026-10-02 07:13:21 | INFO | Epoch 25/120 complete | train_loss=0.000264 | val_loss=0.000041 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 started
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 1/36 | loss=0.000247 | elapsed=0.0s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 3/36 | loss=0.000277 | elapsed=0.0s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 6/36 | loss=0.000263 | elapsed=0.1s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 9/36 | loss=0.000272 | elapsed=0.1s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 12/36 | loss=0.000241 | elapsed=0.1s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 15/36 | loss=0.000226 | elapsed=0.1s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 18/36 | loss=0.000244 | elapsed=0.2s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 21/36 | loss=0.000261 | elapsed=0.2s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 24/36 | loss=0.000240 | elapsed=0.2s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 27/36 | loss=0.000255 | elapsed=0.2s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 30/36 | loss=0.000276 | elapsed=0.2s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 33/36 | loss=0.000282 | elapsed=0.3s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 | batch 36/36 | loss=0.000265 | elapsed=0.3s
+2026-10-02 07:13:21 | INFO | Epoch 26/120 complete | train_loss=0.000259 | val_loss=0.000048 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:21 | INFO | Epoch 27/120 started
+2026-10-02 07:13:21 | INFO | Epoch 27/120 | batch 1/36 | loss=0.000268 | elapsed=0.0s
+2026-10-02 07:13:21 | INFO | Epoch 27/120 | batch 3/36 | loss=0.000260 | elapsed=0.0s
+2026-10-02 07:13:21 | INFO | Epoch 27/120 | batch 6/36 | loss=0.000251 | elapsed=0.1s
+2026-10-02 07:13:21 | INFO | Epoch 27/120 | batch 9/36 | loss=0.000261 | elapsed=0.1s
+2026-10-02 07:13:21 | INFO | Epoch 27/120 | batch 12/36 | loss=0.000219 | elapsed=0.1s
+2026-10-02 07:13:21 | INFO | Epoch 27/120 | batch 15/36 | loss=0.000233 | elapsed=0.1s
+2026-10-02 07:13:22 | INFO | Epoch 27/120 | batch 18/36 | loss=0.000246 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 27/120 | batch 21/36 | loss=0.000251 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 27/120 | batch 24/36 | loss=0.000262 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 27/120 | batch 27/36 | loss=0.000255 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 27/120 | batch 30/36 | loss=0.000254 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 27/120 | batch 33/36 | loss=0.000261 | elapsed=0.3s
+2026-10-02 07:13:22 | INFO | Epoch 27/120 | batch 36/36 | loss=0.000282 | elapsed=0.3s
+2026-10-02 07:13:22 | INFO | Epoch 27/120 complete | train_loss=0.000250 | val_loss=0.000030 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:22 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000030
+2026-10-02 07:13:22 | INFO | Epoch 28/120 started
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 1/36 | loss=0.000265 | elapsed=0.0s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 3/36 | loss=0.000281 | elapsed=0.0s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 6/36 | loss=0.000236 | elapsed=0.1s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 9/36 | loss=0.000267 | elapsed=0.1s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 12/36 | loss=0.000224 | elapsed=0.1s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 15/36 | loss=0.000242 | elapsed=0.1s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 18/36 | loss=0.000231 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 21/36 | loss=0.000233 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 24/36 | loss=0.000255 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 27/36 | loss=0.000241 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 30/36 | loss=0.000228 | elapsed=0.2s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 33/36 | loss=0.000256 | elapsed=0.3s
+2026-10-02 07:13:22 | INFO | Epoch 28/120 | batch 36/36 | loss=0.000229 | elapsed=0.3s
+2026-10-02 07:13:23 | INFO | Epoch 28/120 complete | train_loss=0.000243 | val_loss=0.000027 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:23 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000027
+2026-10-02 07:13:23 | INFO | Epoch 29/120 started
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 1/36 | loss=0.000226 | elapsed=0.0s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 3/36 | loss=0.000234 | elapsed=0.0s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 6/36 | loss=0.000272 | elapsed=0.1s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 9/36 | loss=0.000251 | elapsed=0.2s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 12/36 | loss=0.000244 | elapsed=0.2s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 15/36 | loss=0.000245 | elapsed=0.2s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 18/36 | loss=0.000247 | elapsed=0.2s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 21/36 | loss=0.000261 | elapsed=0.2s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 24/36 | loss=0.000238 | elapsed=0.3s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 27/36 | loss=0.000256 | elapsed=0.3s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 30/36 | loss=0.000258 | elapsed=0.3s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 33/36 | loss=0.000245 | elapsed=0.3s
+2026-10-02 07:13:23 | INFO | Epoch 29/120 | batch 36/36 | loss=0.000229 | elapsed=0.4s
+2026-10-02 07:13:24 | INFO | Epoch 29/120 complete | train_loss=0.000246 | val_loss=0.000030 | learning_rate=0.001 | elapsed=0.9s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 started
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 1/36 | loss=0.000231 | elapsed=0.0s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 3/36 | loss=0.000253 | elapsed=0.0s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 6/36 | loss=0.000243 | elapsed=0.1s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 9/36 | loss=0.000228 | elapsed=0.1s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 12/36 | loss=0.000248 | elapsed=0.1s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 15/36 | loss=0.000248 | elapsed=0.1s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 18/36 | loss=0.000244 | elapsed=0.2s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 21/36 | loss=0.000237 | elapsed=0.2s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 24/36 | loss=0.000239 | elapsed=0.2s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 27/36 | loss=0.000221 | elapsed=0.2s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 30/36 | loss=0.000226 | elapsed=0.2s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 33/36 | loss=0.000222 | elapsed=0.3s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 | batch 36/36 | loss=0.000267 | elapsed=0.3s
+2026-10-02 07:13:24 | INFO | Epoch 30/120 complete | train_loss=0.000234 | val_loss=0.000039 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:24 | INFO | Epoch 31/120 started
+2026-10-02 07:13:24 | INFO | Epoch 31/120 | batch 1/36 | loss=0.000228 | elapsed=0.0s
+2026-10-02 07:13:24 | INFO | Epoch 31/120 | batch 3/36 | loss=0.000209 | elapsed=0.0s
+2026-10-02 07:13:24 | INFO | Epoch 31/120 | batch 6/36 | loss=0.000254 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 9/36 | loss=0.000231 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 12/36 | loss=0.000243 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 15/36 | loss=0.000208 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 18/36 | loss=0.000239 | elapsed=0.2s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 21/36 | loss=0.000210 | elapsed=0.2s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 24/36 | loss=0.000253 | elapsed=0.2s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 27/36 | loss=0.000213 | elapsed=0.2s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 30/36 | loss=0.000245 | elapsed=0.2s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 33/36 | loss=0.000229 | elapsed=0.3s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 | batch 36/36 | loss=0.000190 | elapsed=0.3s
+2026-10-02 07:13:25 | INFO | Epoch 31/120 complete | train_loss=0.000233 | val_loss=0.000034 | learning_rate=0.001 | elapsed=0.8s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 started
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 1/36 | loss=0.000228 | elapsed=0.0s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 3/36 | loss=0.000238 | elapsed=0.0s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 6/36 | loss=0.000218 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 9/36 | loss=0.000227 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 12/36 | loss=0.000245 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 15/36 | loss=0.000225 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 18/36 | loss=0.000255 | elapsed=0.1s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 21/36 | loss=0.000211 | elapsed=0.2s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 24/36 | loss=0.000244 | elapsed=0.2s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 27/36 | loss=0.000227 | elapsed=0.2s
+2026-10-02 07:13:25 | INFO | Epoch 32/120 | batch 30/36 | loss=0.000227 | elapsed=0.2s
+2026-10-02 07:13:26 | INFO | Epoch 32/120 | batch 33/36 | loss=0.000237 | elapsed=0.3s
+2026-10-02 07:13:26 | INFO | Epoch 32/120 | batch 36/36 | loss=0.000257 | elapsed=0.3s
+2026-10-02 07:13:26 | INFO | Epoch 32/120 complete | train_loss=0.000232 | val_loss=0.000036 | learning_rate=0.001 | elapsed=0.7s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 started
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 1/36 | loss=0.000218 | elapsed=0.0s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 3/36 | loss=0.000235 | elapsed=0.0s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 6/36 | loss=0.000218 | elapsed=0.1s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 9/36 | loss=0.000229 | elapsed=0.1s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 12/36 | loss=0.000198 | elapsed=0.1s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 15/36 | loss=0.000198 | elapsed=0.1s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 18/36 | loss=0.000209 | elapsed=0.2s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 21/36 | loss=0.000220 | elapsed=0.2s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 24/36 | loss=0.000219 | elapsed=0.2s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 27/36 | loss=0.000203 | elapsed=0.2s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 30/36 | loss=0.000232 | elapsed=0.2s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 33/36 | loss=0.000229 | elapsed=0.3s
+2026-10-02 07:13:26 | INFO | Epoch 33/120 | batch 36/36 | loss=0.000224 | elapsed=0.3s
+2026-10-02 07:13:27 | INFO | Epoch 33/120 complete | train_loss=0.000223 | val_loss=0.000032 | learning_rate=0.0005 | elapsed=0.9s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 started
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 1/36 | loss=0.000214 | elapsed=0.0s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 3/36 | loss=0.000194 | elapsed=0.1s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 6/36 | loss=0.000207 | elapsed=0.2s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 9/36 | loss=0.000234 | elapsed=0.2s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 12/36 | loss=0.000205 | elapsed=0.2s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 15/36 | loss=0.000220 | elapsed=0.2s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 18/36 | loss=0.000215 | elapsed=0.3s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 21/36 | loss=0.000220 | elapsed=0.3s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 24/36 | loss=0.000213 | elapsed=0.3s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 27/36 | loss=0.000205 | elapsed=0.3s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 30/36 | loss=0.000223 | elapsed=0.3s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 33/36 | loss=0.000199 | elapsed=0.4s
+2026-10-02 07:13:27 | INFO | Epoch 34/120 | batch 36/36 | loss=0.000225 | elapsed=0.4s
+2026-10-02 07:13:28 | INFO | Epoch 34/120 complete | train_loss=0.000215 | val_loss=0.000039 | learning_rate=0.0005 | elapsed=0.9s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 started
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 1/36 | loss=0.000200 | elapsed=0.0s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 3/36 | loss=0.000226 | elapsed=0.0s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 6/36 | loss=0.000206 | elapsed=0.1s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 9/36 | loss=0.000227 | elapsed=0.1s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 12/36 | loss=0.000209 | elapsed=0.1s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 15/36 | loss=0.000217 | elapsed=0.1s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 18/36 | loss=0.000225 | elapsed=0.2s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 21/36 | loss=0.000202 | elapsed=0.2s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 24/36 | loss=0.000227 | elapsed=0.2s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 27/36 | loss=0.000193 | elapsed=0.2s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 30/36 | loss=0.000198 | elapsed=0.2s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 33/36 | loss=0.000179 | elapsed=0.3s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 | batch 36/36 | loss=0.000212 | elapsed=0.3s
+2026-10-02 07:13:28 | INFO | Epoch 35/120 complete | train_loss=0.000210 | val_loss=0.000032 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:28 | INFO | Epoch 36/120 started
+2026-10-02 07:13:28 | INFO | Epoch 36/120 | batch 1/36 | loss=0.000202 | elapsed=0.0s
+2026-10-02 07:13:28 | INFO | Epoch 36/120 | batch 3/36 | loss=0.000215 | elapsed=0.0s
+2026-10-02 07:13:28 | INFO | Epoch 36/120 | batch 6/36 | loss=0.000231 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 9/36 | loss=0.000203 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 12/36 | loss=0.000220 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 15/36 | loss=0.000226 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 18/36 | loss=0.000220 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 21/36 | loss=0.000214 | elapsed=0.2s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 24/36 | loss=0.000226 | elapsed=0.2s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 27/36 | loss=0.000224 | elapsed=0.2s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 30/36 | loss=0.000213 | elapsed=0.2s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 33/36 | loss=0.000213 | elapsed=0.3s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 | batch 36/36 | loss=0.000208 | elapsed=0.3s
+2026-10-02 07:13:29 | INFO | Epoch 36/120 complete | train_loss=0.000212 | val_loss=0.000034 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 started
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 1/36 | loss=0.000219 | elapsed=0.0s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 3/36 | loss=0.000200 | elapsed=0.0s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 6/36 | loss=0.000232 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 9/36 | loss=0.000226 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 12/36 | loss=0.000211 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 15/36 | loss=0.000212 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 18/36 | loss=0.000200 | elapsed=0.1s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 21/36 | loss=0.000224 | elapsed=0.2s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 24/36 | loss=0.000213 | elapsed=0.2s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 27/36 | loss=0.000218 | elapsed=0.2s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 30/36 | loss=0.000212 | elapsed=0.2s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 33/36 | loss=0.000190 | elapsed=0.3s
+2026-10-02 07:13:29 | INFO | Epoch 37/120 | batch 36/36 | loss=0.000205 | elapsed=0.3s
+2026-10-02 07:13:30 | INFO | Epoch 37/120 complete | train_loss=0.000211 | val_loss=0.000026 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:30 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000026
+2026-10-02 07:13:30 | INFO | Epoch 38/120 started
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 1/36 | loss=0.000201 | elapsed=0.0s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 3/36 | loss=0.000224 | elapsed=0.0s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 6/36 | loss=0.000210 | elapsed=0.1s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 9/36 | loss=0.000207 | elapsed=0.1s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 12/36 | loss=0.000208 | elapsed=0.1s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 15/36 | loss=0.000203 | elapsed=0.1s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 18/36 | loss=0.000197 | elapsed=0.1s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 21/36 | loss=0.000229 | elapsed=0.2s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 24/36 | loss=0.000214 | elapsed=0.2s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 27/36 | loss=0.000224 | elapsed=0.2s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 30/36 | loss=0.000197 | elapsed=0.2s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 33/36 | loss=0.000215 | elapsed=0.3s
+2026-10-02 07:13:30 | INFO | Epoch 38/120 | batch 36/36 | loss=0.000231 | elapsed=0.3s
+2026-10-02 07:13:31 | INFO | Epoch 38/120 complete | train_loss=0.000211 | val_loss=0.000026 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:31 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000026
+2026-10-02 07:13:31 | INFO | Epoch 39/120 started
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 1/36 | loss=0.000212 | elapsed=0.1s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 3/36 | loss=0.000202 | elapsed=0.1s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 6/36 | loss=0.000222 | elapsed=0.2s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 9/36 | loss=0.000188 | elapsed=0.2s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 12/36 | loss=0.000215 | elapsed=0.2s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 15/36 | loss=0.000231 | elapsed=0.2s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 18/36 | loss=0.000203 | elapsed=0.2s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 21/36 | loss=0.000199 | elapsed=0.3s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 24/36 | loss=0.000200 | elapsed=0.3s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 27/36 | loss=0.000177 | elapsed=0.3s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 30/36 | loss=0.000218 | elapsed=0.3s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 33/36 | loss=0.000231 | elapsed=0.4s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 | batch 36/36 | loss=0.000201 | elapsed=0.4s
+2026-10-02 07:13:31 | INFO | Epoch 39/120 complete | train_loss=0.000208 | val_loss=0.000028 | learning_rate=0.0005 | elapsed=0.8s
+2026-10-02 07:13:31 | INFO | Epoch 40/120 started
+2026-10-02 07:13:31 | INFO | Epoch 40/120 | batch 1/36 | loss=0.000216 | elapsed=0.0s
+2026-10-02 07:13:31 | INFO | Epoch 40/120 | batch 3/36 | loss=0.000189 | elapsed=0.0s
+2026-10-02 07:13:31 | INFO | Epoch 40/120 | batch 6/36 | loss=0.000203 | elapsed=0.1s
+2026-10-02 07:13:31 | INFO | Epoch 40/120 | batch 9/36 | loss=0.000185 | elapsed=0.1s
+2026-10-02 07:13:31 | INFO | Epoch 40/120 | batch 12/36 | loss=0.000201 | elapsed=0.1s
+2026-10-02 07:13:31 | INFO | Epoch 40/120 | batch 15/36 | loss=0.000206 | elapsed=0.1s
+2026-10-02 07:13:31 | INFO | Epoch 40/120 | batch 18/36 | loss=0.000216 | elapsed=0.1s
+2026-10-02 07:13:31 | INFO | Epoch 40/120 | batch 21/36 | loss=0.000200 | elapsed=0.2s
+2026-10-02 07:13:32 | INFO | Epoch 40/120 | batch 24/36 | loss=0.000196 | elapsed=0.2s
+2026-10-02 07:13:32 | INFO | Epoch 40/120 | batch 27/36 | loss=0.000215 | elapsed=0.2s
+2026-10-02 07:13:32 | INFO | Epoch 40/120 | batch 30/36 | loss=0.000199 | elapsed=0.2s
+2026-10-02 07:13:32 | INFO | Epoch 40/120 | batch 33/36 | loss=0.000211 | elapsed=0.3s
+2026-10-02 07:13:32 | INFO | Epoch 40/120 | batch 36/36 | loss=0.000191 | elapsed=0.3s
+2026-10-02 07:13:32 | INFO | Epoch 40/120 complete | train_loss=0.000203 | val_loss=0.000032 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 started
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 1/36 | loss=0.000227 | elapsed=0.0s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 3/36 | loss=0.000206 | elapsed=0.0s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 6/36 | loss=0.000205 | elapsed=0.1s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 9/36 | loss=0.000212 | elapsed=0.1s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 12/36 | loss=0.000193 | elapsed=0.1s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 15/36 | loss=0.000216 | elapsed=0.1s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 18/36 | loss=0.000200 | elapsed=0.1s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 21/36 | loss=0.000210 | elapsed=0.2s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 24/36 | loss=0.000208 | elapsed=0.2s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 27/36 | loss=0.000220 | elapsed=0.2s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 30/36 | loss=0.000195 | elapsed=0.2s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 33/36 | loss=0.000216 | elapsed=0.3s
+2026-10-02 07:13:32 | INFO | Epoch 41/120 | batch 36/36 | loss=0.000206 | elapsed=0.3s
+2026-10-02 07:13:33 | INFO | Epoch 41/120 complete | train_loss=0.000203 | val_loss=0.000031 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 started
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 1/36 | loss=0.000222 | elapsed=0.0s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 3/36 | loss=0.000191 | elapsed=0.0s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 6/36 | loss=0.000217 | elapsed=0.1s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 9/36 | loss=0.000179 | elapsed=0.1s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 12/36 | loss=0.000194 | elapsed=0.1s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 15/36 | loss=0.000213 | elapsed=0.1s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 18/36 | loss=0.000204 | elapsed=0.1s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 21/36 | loss=0.000198 | elapsed=0.2s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 24/36 | loss=0.000208 | elapsed=0.2s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 27/36 | loss=0.000210 | elapsed=0.2s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 30/36 | loss=0.000202 | elapsed=0.2s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 33/36 | loss=0.000193 | elapsed=0.3s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 | batch 36/36 | loss=0.000202 | elapsed=0.3s
+2026-10-02 07:13:33 | INFO | Epoch 42/120 complete | train_loss=0.000200 | val_loss=0.000022 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:33 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000022
+2026-10-02 07:13:33 | INFO | Epoch 43/120 started
+2026-10-02 07:13:33 | INFO | Epoch 43/120 | batch 1/36 | loss=0.000197 | elapsed=0.0s
+2026-10-02 07:13:33 | INFO | Epoch 43/120 | batch 3/36 | loss=0.000205 | elapsed=0.0s
+2026-10-02 07:13:33 | INFO | Epoch 43/120 | batch 6/36 | loss=0.000210 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 9/36 | loss=0.000179 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 12/36 | loss=0.000198 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 15/36 | loss=0.000174 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 18/36 | loss=0.000202 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 21/36 | loss=0.000202 | elapsed=0.2s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 24/36 | loss=0.000188 | elapsed=0.2s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 27/36 | loss=0.000206 | elapsed=0.2s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 30/36 | loss=0.000212 | elapsed=0.2s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 33/36 | loss=0.000194 | elapsed=0.3s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 | batch 36/36 | loss=0.000208 | elapsed=0.4s
+2026-10-02 07:13:34 | INFO | Epoch 43/120 complete | train_loss=0.000199 | val_loss=0.000030 | learning_rate=0.0005 | elapsed=0.8s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 started
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 1/36 | loss=0.000212 | elapsed=0.0s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 3/36 | loss=0.000215 | elapsed=0.0s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 6/36 | loss=0.000203 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 9/36 | loss=0.000196 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 12/36 | loss=0.000189 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 15/36 | loss=0.000175 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 18/36 | loss=0.000185 | elapsed=0.1s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 21/36 | loss=0.000204 | elapsed=0.2s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 24/36 | loss=0.000202 | elapsed=0.2s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 27/36 | loss=0.000200 | elapsed=0.2s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 30/36 | loss=0.000183 | elapsed=0.2s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 33/36 | loss=0.000208 | elapsed=0.3s
+2026-10-02 07:13:34 | INFO | Epoch 44/120 | batch 36/36 | loss=0.000200 | elapsed=0.3s
+2026-10-02 07:13:35 | INFO | Epoch 44/120 complete | train_loss=0.000197 | val_loss=0.000024 | learning_rate=0.0005 | elapsed=0.8s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 started
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 1/36 | loss=0.000191 | elapsed=0.0s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 3/36 | loss=0.000198 | elapsed=0.0s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 6/36 | loss=0.000179 | elapsed=0.1s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 9/36 | loss=0.000183 | elapsed=0.1s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 12/36 | loss=0.000213 | elapsed=0.1s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 15/36 | loss=0.000188 | elapsed=0.1s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 18/36 | loss=0.000172 | elapsed=0.1s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 21/36 | loss=0.000192 | elapsed=0.2s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 24/36 | loss=0.000186 | elapsed=0.2s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 27/36 | loss=0.000203 | elapsed=0.2s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 30/36 | loss=0.000174 | elapsed=0.2s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 33/36 | loss=0.000207 | elapsed=0.3s
+2026-10-02 07:13:35 | INFO | Epoch 45/120 | batch 36/36 | loss=0.000174 | elapsed=0.3s
+2026-10-02 07:13:36 | INFO | Epoch 45/120 complete | train_loss=0.000191 | val_loss=0.000019 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:36 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000019
+2026-10-02 07:13:36 | INFO | Epoch 46/120 started
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 1/36 | loss=0.000188 | elapsed=0.0s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 3/36 | loss=0.000194 | elapsed=0.0s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 6/36 | loss=0.000207 | elapsed=0.1s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 9/36 | loss=0.000186 | elapsed=0.1s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 12/36 | loss=0.000196 | elapsed=0.1s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 15/36 | loss=0.000199 | elapsed=0.1s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 18/36 | loss=0.000197 | elapsed=0.2s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 21/36 | loss=0.000184 | elapsed=0.2s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 24/36 | loss=0.000214 | elapsed=0.2s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 27/36 | loss=0.000165 | elapsed=0.2s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 30/36 | loss=0.000200 | elapsed=0.2s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 33/36 | loss=0.000189 | elapsed=0.3s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 | batch 36/36 | loss=0.000180 | elapsed=0.3s
+2026-10-02 07:13:36 | INFO | Epoch 46/120 complete | train_loss=0.000196 | val_loss=0.000026 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:36 | INFO | Epoch 47/120 started
+2026-10-02 07:13:36 | INFO | Epoch 47/120 | batch 1/36 | loss=0.000198 | elapsed=0.0s
+2026-10-02 07:13:36 | INFO | Epoch 47/120 | batch 3/36 | loss=0.000196 | elapsed=0.0s
+2026-10-02 07:13:36 | INFO | Epoch 47/120 | batch 6/36 | loss=0.000207 | elapsed=0.1s
+2026-10-02 07:13:36 | INFO | Epoch 47/120 | batch 9/36 | loss=0.000220 | elapsed=0.1s
+2026-10-02 07:13:36 | INFO | Epoch 47/120 | batch 12/36 | loss=0.000196 | elapsed=0.1s
+2026-10-02 07:13:36 | INFO | Epoch 47/120 | batch 15/36 | loss=0.000204 | elapsed=0.1s
+2026-10-02 07:13:37 | INFO | Epoch 47/120 | batch 18/36 | loss=0.000176 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 47/120 | batch 21/36 | loss=0.000176 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 47/120 | batch 24/36 | loss=0.000179 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 47/120 | batch 27/36 | loss=0.000191 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 47/120 | batch 30/36 | loss=0.000185 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 47/120 | batch 33/36 | loss=0.000182 | elapsed=0.3s
+2026-10-02 07:13:37 | INFO | Epoch 47/120 | batch 36/36 | loss=0.000211 | elapsed=0.3s
+2026-10-02 07:13:37 | INFO | Epoch 47/120 complete | train_loss=0.000192 | val_loss=0.000030 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 started
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 1/36 | loss=0.000208 | elapsed=0.0s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 3/36 | loss=0.000203 | elapsed=0.0s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 6/36 | loss=0.000214 | elapsed=0.1s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 9/36 | loss=0.000193 | elapsed=0.1s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 12/36 | loss=0.000208 | elapsed=0.1s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 15/36 | loss=0.000173 | elapsed=0.1s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 18/36 | loss=0.000199 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 21/36 | loss=0.000199 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 24/36 | loss=0.000180 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 27/36 | loss=0.000187 | elapsed=0.2s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 30/36 | loss=0.000197 | elapsed=0.3s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 33/36 | loss=0.000210 | elapsed=0.3s
+2026-10-02 07:13:37 | INFO | Epoch 48/120 | batch 36/36 | loss=0.000196 | elapsed=0.4s
+2026-10-02 07:13:38 | INFO | Epoch 48/120 complete | train_loss=0.000194 | val_loss=0.000033 | learning_rate=0.0005 | elapsed=0.8s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 started
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 1/36 | loss=0.000203 | elapsed=0.0s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 3/36 | loss=0.000180 | elapsed=0.0s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 6/36 | loss=0.000183 | elapsed=0.1s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 9/36 | loss=0.000190 | elapsed=0.1s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 12/36 | loss=0.000191 | elapsed=0.1s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 15/36 | loss=0.000182 | elapsed=0.1s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 18/36 | loss=0.000202 | elapsed=0.1s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 21/36 | loss=0.000162 | elapsed=0.2s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 24/36 | loss=0.000175 | elapsed=0.2s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 27/36 | loss=0.000209 | elapsed=0.2s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 30/36 | loss=0.000190 | elapsed=0.2s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 33/36 | loss=0.000181 | elapsed=0.3s
+2026-10-02 07:13:38 | INFO | Epoch 49/120 | batch 36/36 | loss=0.000196 | elapsed=0.3s
+2026-10-02 07:13:39 | INFO | Epoch 49/120 complete | train_loss=0.000190 | val_loss=0.000025 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 started
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 1/36 | loss=0.000178 | elapsed=0.0s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 3/36 | loss=0.000190 | elapsed=0.0s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 6/36 | loss=0.000203 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 9/36 | loss=0.000198 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 12/36 | loss=0.000179 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 15/36 | loss=0.000191 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 18/36 | loss=0.000210 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 21/36 | loss=0.000188 | elapsed=0.2s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 24/36 | loss=0.000176 | elapsed=0.2s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 27/36 | loss=0.000199 | elapsed=0.2s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 30/36 | loss=0.000181 | elapsed=0.2s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 33/36 | loss=0.000168 | elapsed=0.3s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 | batch 36/36 | loss=0.000210 | elapsed=0.3s
+2026-10-02 07:13:39 | INFO | Epoch 50/120 complete | train_loss=0.000189 | val_loss=0.000016 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:39 | INFO | New best checkpoint saved | path=/data/outputs_chronological_v3/best_model.pt | val_loss=0.000016
+2026-10-02 07:13:39 | INFO | Epoch 51/120 started
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 1/36 | loss=0.000204 | elapsed=0.0s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 3/36 | loss=0.000195 | elapsed=0.0s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 6/36 | loss=0.000174 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 9/36 | loss=0.000207 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 12/36 | loss=0.000206 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 15/36 | loss=0.000203 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 18/36 | loss=0.000188 | elapsed=0.1s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 21/36 | loss=0.000188 | elapsed=0.2s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 24/36 | loss=0.000190 | elapsed=0.2s
+2026-10-02 07:13:39 | INFO | Epoch 51/120 | batch 27/36 | loss=0.000191 | elapsed=0.2s
+2026-10-02 07:13:40 | INFO | Epoch 51/120 | batch 30/36 | loss=0.000190 | elapsed=0.2s
+2026-10-02 07:13:40 | INFO | Epoch 51/120 | batch 33/36 | loss=0.000194 | elapsed=0.3s
+2026-10-02 07:13:40 | INFO | Epoch 51/120 | batch 36/36 | loss=0.000202 | elapsed=0.3s
+2026-10-02 07:13:40 | INFO | Epoch 51/120 complete | train_loss=0.000190 | val_loss=0.000021 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 started
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 1/36 | loss=0.000188 | elapsed=0.0s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 3/36 | loss=0.000181 | elapsed=0.0s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 6/36 | loss=0.000174 | elapsed=0.1s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 9/36 | loss=0.000173 | elapsed=0.1s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 12/36 | loss=0.000185 | elapsed=0.1s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 15/36 | loss=0.000196 | elapsed=0.1s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 18/36 | loss=0.000203 | elapsed=0.1s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 21/36 | loss=0.000185 | elapsed=0.2s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 24/36 | loss=0.000180 | elapsed=0.2s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 27/36 | loss=0.000174 | elapsed=0.2s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 30/36 | loss=0.000191 | elapsed=0.2s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 33/36 | loss=0.000182 | elapsed=0.3s
+2026-10-02 07:13:40 | INFO | Epoch 52/120 | batch 36/36 | loss=0.000202 | elapsed=0.3s
+2026-10-02 07:13:41 | INFO | Epoch 52/120 complete | train_loss=0.000183 | val_loss=0.000025 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 started
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 1/36 | loss=0.000181 | elapsed=0.0s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 3/36 | loss=0.000203 | elapsed=0.0s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 6/36 | loss=0.000210 | elapsed=0.1s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 9/36 | loss=0.000191 | elapsed=0.1s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 12/36 | loss=0.000204 | elapsed=0.1s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 15/36 | loss=0.000191 | elapsed=0.1s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 18/36 | loss=0.000186 | elapsed=0.1s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 21/36 | loss=0.000214 | elapsed=0.2s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 24/36 | loss=0.000213 | elapsed=0.2s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 27/36 | loss=0.000190 | elapsed=0.3s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 30/36 | loss=0.000188 | elapsed=0.3s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 33/36 | loss=0.000176 | elapsed=0.3s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 | batch 36/36 | loss=0.000174 | elapsed=0.4s
+2026-10-02 07:13:41 | INFO | Epoch 53/120 complete | train_loss=0.000193 | val_loss=0.000022 | learning_rate=0.0005 | elapsed=0.8s
+2026-10-02 07:13:41 | INFO | Epoch 54/120 started
+2026-10-02 07:13:41 | INFO | Epoch 54/120 | batch 1/36 | loss=0.000195 | elapsed=0.0s
+2026-10-02 07:13:41 | INFO | Epoch 54/120 | batch 3/36 | loss=0.000182 | elapsed=0.0s
+2026-10-02 07:13:41 | INFO | Epoch 54/120 | batch 6/36 | loss=0.000172 | elapsed=0.1s
+2026-10-02 07:13:41 | INFO | Epoch 54/120 | batch 9/36 | loss=0.000191 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 12/36 | loss=0.000173 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 15/36 | loss=0.000180 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 18/36 | loss=0.000193 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 21/36 | loss=0.000175 | elapsed=0.2s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 24/36 | loss=0.000180 | elapsed=0.2s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 27/36 | loss=0.000202 | elapsed=0.2s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 30/36 | loss=0.000184 | elapsed=0.2s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 33/36 | loss=0.000185 | elapsed=0.3s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 | batch 36/36 | loss=0.000193 | elapsed=0.3s
+2026-10-02 07:13:42 | INFO | Epoch 54/120 complete | train_loss=0.000187 | val_loss=0.000025 | learning_rate=0.0005 | elapsed=0.7s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 started
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 1/36 | loss=0.000193 | elapsed=0.0s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 3/36 | loss=0.000198 | elapsed=0.0s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 6/36 | loss=0.000197 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 9/36 | loss=0.000193 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 12/36 | loss=0.000169 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 15/36 | loss=0.000171 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 18/36 | loss=0.000192 | elapsed=0.1s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 21/36 | loss=0.000188 | elapsed=0.2s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 24/36 | loss=0.000177 | elapsed=0.2s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 27/36 | loss=0.000160 | elapsed=0.2s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 30/36 | loss=0.000183 | elapsed=0.2s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 33/36 | loss=0.000175 | elapsed=0.3s
+2026-10-02 07:13:42 | INFO | Epoch 55/120 | batch 36/36 | loss=0.000176 | elapsed=0.3s
+2026-10-02 07:13:43 | INFO | Epoch 55/120 complete | train_loss=0.000186 | val_loss=0.000021 | learning_rate=0.00025 | elapsed=0.7s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 started
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 1/36 | loss=0.000195 | elapsed=0.0s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 3/36 | loss=0.000163 | elapsed=0.0s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 6/36 | loss=0.000158 | elapsed=0.1s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 9/36 | loss=0.000165 | elapsed=0.1s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 12/36 | loss=0.000165 | elapsed=0.1s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 15/36 | loss=0.000175 | elapsed=0.1s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 18/36 | loss=0.000178 | elapsed=0.1s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 21/36 | loss=0.000188 | elapsed=0.2s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 24/36 | loss=0.000164 | elapsed=0.2s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 27/36 | loss=0.000165 | elapsed=0.2s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 30/36 | loss=0.000165 | elapsed=0.2s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 33/36 | loss=0.000175 | elapsed=0.3s
+2026-10-02 07:13:43 | INFO | Epoch 56/120 | batch 36/36 | loss=0.000195 | elapsed=0.3s
+2026-10-02 07:13:44 | INFO | Epoch 56/120 complete | train_loss=0.000176 | val_loss=0.000019 | learning_rate=0.00025 | elapsed=0.8s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 started
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 1/36 | loss=0.000169 | elapsed=0.0s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 3/36 | loss=0.000166 | elapsed=0.0s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 6/36 | loss=0.000188 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 9/36 | loss=0.000176 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 12/36 | loss=0.000188 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 15/36 | loss=0.000186 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 18/36 | loss=0.000166 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 21/36 | loss=0.000165 | elapsed=0.2s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 24/36 | loss=0.000184 | elapsed=0.2s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 27/36 | loss=0.000191 | elapsed=0.2s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 30/36 | loss=0.000178 | elapsed=0.2s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 33/36 | loss=0.000166 | elapsed=0.3s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 | batch 36/36 | loss=0.000188 | elapsed=0.3s
+2026-10-02 07:13:44 | INFO | Epoch 57/120 complete | train_loss=0.000178 | val_loss=0.000022 | learning_rate=0.00025 | elapsed=0.6s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 started
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 1/36 | loss=0.000168 | elapsed=0.0s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 3/36 | loss=0.000183 | elapsed=0.0s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 6/36 | loss=0.000173 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 9/36 | loss=0.000175 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 12/36 | loss=0.000183 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 15/36 | loss=0.000182 | elapsed=0.1s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 18/36 | loss=0.000174 | elapsed=0.2s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 21/36 | loss=0.000178 | elapsed=0.2s
+2026-10-02 07:13:44 | INFO | Epoch 58/120 | batch 24/36 | loss=0.000186 | elapsed=0.3s
+2026-10-02 07:13:45 | INFO | Epoch 58/120 | batch 27/36 | loss=0.000172 | elapsed=0.3s
+2026-10-02 07:13:45 | INFO | Epoch 58/120 | batch 30/36 | loss=0.000177 | elapsed=0.3s
+2026-10-02 07:13:45 | INFO | Epoch 58/120 | batch 33/36 | loss=0.000194 | elapsed=0.3s
+2026-10-02 07:13:45 | INFO | Epoch 58/120 | batch 36/36 | loss=0.000194 | elapsed=0.4s
+2026-10-02 07:13:45 | INFO | Epoch 58/120 complete | train_loss=0.000178 | val_loss=0.000022 | learning_rate=0.00025 | elapsed=0.8s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 started
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 1/36 | loss=0.000191 | elapsed=0.0s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 3/36 | loss=0.000178 | elapsed=0.0s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 6/36 | loss=0.000168 | elapsed=0.1s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 9/36 | loss=0.000165 | elapsed=0.1s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 12/36 | loss=0.000184 | elapsed=0.1s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 15/36 | loss=0.000187 | elapsed=0.1s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 18/36 | loss=0.000185 | elapsed=0.1s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 21/36 | loss=0.000169 | elapsed=0.2s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 24/36 | loss=0.000169 | elapsed=0.2s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 27/36 | loss=0.000177 | elapsed=0.2s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 30/36 | loss=0.000168 | elapsed=0.2s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 33/36 | loss=0.000167 | elapsed=0.3s
+2026-10-02 07:13:45 | INFO | Epoch 59/120 | batch 36/36 | loss=0.000174 | elapsed=0.3s
+2026-10-02 07:13:46 | INFO | Epoch 59/120 complete | train_loss=0.000177 | val_loss=0.000018 | learning_rate=0.00025 | elapsed=0.7s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 started
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 1/36 | loss=0.000171 | elapsed=0.0s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 3/36 | loss=0.000175 | elapsed=0.0s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 6/36 | loss=0.000177 | elapsed=0.1s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 9/36 | loss=0.000173 | elapsed=0.1s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 12/36 | loss=0.000183 | elapsed=0.1s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 15/36 | loss=0.000179 | elapsed=0.1s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 18/36 | loss=0.000167 | elapsed=0.1s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 21/36 | loss=0.000174 | elapsed=0.2s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 24/36 | loss=0.000189 | elapsed=0.2s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 27/36 | loss=0.000193 | elapsed=0.2s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 30/36 | loss=0.000189 | elapsed=0.2s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 33/36 | loss=0.000183 | elapsed=0.3s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 | batch 36/36 | loss=0.000159 | elapsed=0.3s
+2026-10-02 07:13:46 | INFO | Epoch 60/120 complete | train_loss=0.000176 | val_loss=0.000020 | learning_rate=0.000125 | elapsed=0.7s
+2026-10-02 07:13:46 | INFO | Epoch 61/120 started
+2026-10-02 07:13:46 | INFO | Epoch 61/120 | batch 1/36 | loss=0.000181 | elapsed=0.0s
+2026-10-02 07:13:46 | INFO | Epoch 61/120 | batch 3/36 | loss=0.000184 | elapsed=0.0s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 6/36 | loss=0.000164 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 9/36 | loss=0.000154 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 12/36 | loss=0.000172 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 15/36 | loss=0.000178 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 18/36 | loss=0.000175 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 21/36 | loss=0.000176 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 24/36 | loss=0.000167 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 27/36 | loss=0.000164 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 30/36 | loss=0.000180 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 33/36 | loss=0.000189 | elapsed=0.3s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 | batch 36/36 | loss=0.000160 | elapsed=0.3s
+2026-10-02 07:13:47 | INFO | Epoch 61/120 complete | train_loss=0.000173 | val_loss=0.000019 | learning_rate=0.000125 | elapsed=0.7s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 started
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 1/36 | loss=0.000176 | elapsed=0.0s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 3/36 | loss=0.000178 | elapsed=0.0s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 6/36 | loss=0.000179 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 9/36 | loss=0.000165 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 12/36 | loss=0.000180 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 15/36 | loss=0.000164 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 18/36 | loss=0.000177 | elapsed=0.1s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 21/36 | loss=0.000161 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 24/36 | loss=0.000182 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 27/36 | loss=0.000177 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 30/36 | loss=0.000173 | elapsed=0.2s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 33/36 | loss=0.000176 | elapsed=0.3s
+2026-10-02 07:13:47 | INFO | Epoch 62/120 | batch 36/36 | loss=0.000176 | elapsed=0.3s
+2026-10-02 07:13:48 | INFO | Epoch 62/120 complete | train_loss=0.000174 | val_loss=0.000025 | learning_rate=0.000125 | elapsed=0.7s
+2026-10-02 07:13:48 | INFO | Early stopping at epoch 62 | best_val_loss=0.000016 | best_epoch=50
+2026-10-02 07:13:48 | INFO | Training finished | best_val_loss=0.000016 | best_epoch=50 | total_elapsed=52.2s

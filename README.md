@@ -1,131 +1,79 @@
-# Hybrid SOC Estimator Dataset Pipeline
+# Mendeley SOC forecast
 
-PyBaMM pipeline to generate and preprocess SOC estimation datasets for LSTM training.
+The forecaster predicts SOC 60 seconds after the latest observation. It uses a
+100-sample history of voltage, signed current, ambient temperature, elapsed
+time, and the SOC estimate at the last observed timestamp. When used on a
+vehicle, provide the SOC estimate currently maintained by its BMS.
 
-## Setup
-
-```bash
-python -m pip install -r requirements.txt
-```
-
-## Generate dataset
-
-Full dataset (225 healthy + 225 degraded):
-
-```bash
-python -B -m data_pipeline.build_dataset --num-healthy 225 --num-degraded 225 --workers 2
-```
-
-Smoke test:
-
-```bash
-python -B -m data_pipeline.build_dataset --num-healthy 2 --num-degraded 2
-```
-
-Skip raw per-simulation files:
-
-```bash
-python -B -m data_pipeline.build_dataset --skip-raw-save
-```
-
-## Outputs
-
-- `datasets/raw/*.npz`
-- `datasets/raw/metadata.csv`
-- `datasets/processed/X_train.npy`
-- `datasets/processed/y_train.npy`
-- `datasets/processed/X_val.npy`
-- `datasets/processed/y_val.npy`
-- `datasets/processed/X_test.npy`
-- `datasets/processed/y_test.npy`
-- `datasets/scalers/input_scaler.pkl`
-
-## Dataset format
-
-- Split by simulation: `70/15/15` (`train/val/test`)
-- Input features: `[Voltage, Current, Temperature]`
-- Sequence shape: `(num_samples, 100, 3)`
-- Target: SOC at the final timestep
-
-
-
-# Things to do
-
--> Change to bilistm after training it once and checking the results
-
-## Kaggle multi-GPU training
-
-The training pipeline automatically wraps the LSTM with `torch.nn.DataParallel`
-when two or more CUDA devices are visible. The same code falls back to one GPU
-or CPU when fewer devices are available. Checkpoint files are saved in the
-plain `LSTMSOCEstimator` format so evaluation and deployment can load them
-without a `module.` prefix.
-
-After generating the full dataset, run from the project directory:
-
-```bash
-python -u run_system.py --dataset-path datasets/processed --epochs 60 --batch-size 1024 --train-subsample 1 --val-subsample 1 --test-subsample 1
-```
-
-The training log prints `Using DataParallel across 2 GPUs` when both Kaggle
-T4 GPUs are being used.
-
-## Logs
-
-The existing Kaggle commands automatically write timestamped messages to the
-console and to these files:
-
-- `logs/dataset_generation.log` — simulation progress, retries, raw-file saves,
-  preprocessing stages, output shapes, and total duration.
-- `logs/training.log` — device/GPU information, dataset sizes, batch progress,
-  epoch losses, learning rate, checkpoint saves, early stopping, and total
-  duration.
-
-## Accuracy outputs
-
-The full training command evaluates the best current LSTM checkpoint
-automatically against the reference SOC values in the test split. It writes
-these files under `evaluation_outputs/`:
-
-- `metrics.json` — MAE, RMSE, R², maximum absolute error, mean signed bias,
-  error standard deviation, and 95th-percentile absolute error.
-- `dataset_distributions.png` — voltage, current, temperature, and reference
-  SOC distributions used by validation.
-- `training_history.png` — training versus validation loss.
-- `soc_tracking.png` — reference and predicted SOC over test samples.
-- `prediction_scatter.png` — reference SOC versus predicted SOC with R².
-- `prediction_error_histogram.png` — prediction error distribution.
-- `prediction_residuals.png` — residuals versus reference SOC.
-- `prediction_error_over_samples.png` — error trend over test-sample order.
-
-The project creates `logs/`, `models/`, and `evaluation_outputs/` as needed.
-All paths are resolved relative to the project directory, so the same command
-works after uploading and extracting the code ZIP in Kaggle.
-
-## Kaggle upload and rerun
-
-Upload `Hybrid_soc_Estimator_code.zip`, extract it, and run from the extracted
-project directory:
+## Prepare the dataset
 
 ```bash
 python -m pip install -r requirements.txt
-python -B -m data_pipeline.build_dataset --num-healthy 225 --num-degraded 225 --workers 2
-python -u run_system.py --dataset-path datasets/processed --epochs 60 --batch-size 1024 --train-subsample 1 --val-subsample 1 --test-subsample 1
+python -m soc_estimator.mendeley \
+  --input "data/mendeley/raw/EV Lithium Ion Battery State of Charge Dataset/charging and discharging (1).xlsx" \
+  --output data/mendeley/forecast_60s_with_current_soc_v1 \
+  --train-stride 5
 ```
 
-If the dataset and checkpoint already exist, regenerate only the saved report
-without retraining:
+The target is reference SOC linearly interpolated at `last input time + 60 s`.
+The input SOC is the reference SOC at the last input time; it never includes
+future labels. During deployment, provide the live SOC estimate from the BMS.
+The model predicts a bounded correction around that estimate. The other four
+features are scaled using training cycles only; current SOC is an unscaled SOC
+fraction.
+
+Later cycle numbers form chronological, disjoint train, validation and test
+splits. Windows cannot cross cycles, duplicate/backward timestamps or gaps over
+60 seconds. Targets are omitted where the segment has no reference SOC at the
+requested future timestamp. The generated metadata records the split, target
+indices, conditions, input scaling and data quality.
+
+## Train on Modal
+
+Upload the generated directory to the existing volume, then start the job in
+detached mode:
 
 ```bash
-python -u run_system.py --evaluate-only --dataset-path datasets/processed --model-path models/best_model.pt
+modal volume put mahindra-mendeley-bms data/mendeley/forecast_60s_with_current_soc_v1 /
+modal run --detach modal_train.py
 ```
 
-The generated dataset, checkpoint, logs, metrics, and plots remain in the
-project directory and can be downloaded from the Kaggle working files.
+Training runs on an NVIDIA A10G, with a 300-epoch limit, 512-sample batches,
+and early stopping after 40 epochs without validation improvement. It selects
+and restores the best cycle-balanced validation checkpoint. A new output
+folder is used for each run. Validation and test reports compare the LSTM with
+both a linear baseline and holding the current SOC estimate constant.
 
-The default full dataset is 225 healthy plus 225 degraded simulations. To
-generate it explicitly, run:
+## Inference
 
-```bash
-python -B -m data_pipeline.build_dataset --num-healthy 225 --num-degraded 225 --workers 2
+Download the new run's `best_model.pt`, then pass a chronological history and
+current SOC estimate as a fraction from 0 to 1:
+
+```python
+from soc_estimator.evaluation import forecast
+
+# 100 rows: timestamp (s), voltage (V), signed current (A), temperature (C)
+result = forecast("best_model.pt", history, current_soc=0.52)
+print(result["target_time_s"], result["soc_percent"])
 ```
+
+The checkpoint includes its model settings and scaler, and inference applies
+the same conversions used in training.
+
+## Current evaluation
+
+The current-SOC LSTM was trained on an NVIDIA A10G, stopped after 65 epochs,
+and selected epoch 25. On 94,156 chronological held-out windows, its MAE was
+0.0064 SOC percentage points (0.0148 points macro-averaged by cycle), compared
+with 0.3943 points (0.7666 macro by cycle) for holding the current SOC constant.
+The report, checkpoint, history, and training log are in
+[`artifacts/mendeley/a10g_forecast_60s_with_current_soc_v1`](artifacts/mendeley/a10g_forecast_60s_with_current_soc_v1/README.md).
+
+Evaluation uses Mendeley's reference SOC at the input timestamp as the current
+SOC estimate. A vehicle must supply its live BMS estimate, so its actual forecast
+error also depends on that estimate's accuracy. Earlier sensor-only runs are not
+comparable to this model because they did not receive current SOC.
+
+This workbook contains regulated cell charge/discharge cycles, not vehicle
+packs or driving data. Ambient temperature is constant at 24 C. Test-cycle
+scores therefore do not establish vehicle or pack readiness.

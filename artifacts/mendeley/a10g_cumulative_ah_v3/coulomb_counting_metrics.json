@@ -1,0 +1,16 @@
+{
+  "capacity_ah_fitted_on_train": 1.9998097172397071,
+  "initial_soc_by_cycle_type": {
+    "charge": 0.0,
+    "discharge": 1.0
+  },
+  "test_metrics": {
+    "MAE": 0.00010111003859515734,
+    "RMSE": 0.00029096739106457834,
+    "R2": 0.9999961399098821,
+    "MaxError": 0.003271715140044651,
+    "MeanBias": -1.3048443677592363e-05,
+    "ErrorStd": 0.00029067466484115873,
+    "P95AbsError": 6.259533900598857e-05
+  }
+}

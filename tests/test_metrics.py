@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from evaluation.metrics import calculate_metrics, r2
+from soc_estimator.evaluation import calculate_metrics
 
 
 class MetricsTests(unittest.TestCase):
@@ -19,9 +19,6 @@ class MetricsTests(unittest.TestCase):
         self.assertAlmostEqual(actual["MeanBias"], 0.0)
         self.assertAlmostEqual(actual["ErrorStd"], np.sqrt(2.0 / 3.0))
         self.assertAlmostEqual(actual["P95AbsError"], 1.0)
-
-    def test_r2_returns_zero_for_constant_reference(self):
-        self.assertEqual(r2([0.5, 0.5], [0.5, 0.6]), 0.0)
 
     def test_metrics_reject_mismatched_shapes(self):
         with self.assertRaises(ValueError):
